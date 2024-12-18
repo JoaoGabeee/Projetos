@@ -17,13 +17,16 @@ public class Produto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-
     @Column(nullable = false)
     private String nome;
-
     @Column(nullable = false)
     private String marca;
-
+    @Column(nullable = false)
+    private BigDecimal preco;
+    @Column(name = "data_fabricacao", nullable = false)
+    private LocalDate dataFabricacao;
+    @Column(name = "data_vencimento", nullable = false)
+    private LocalDate dataVencimento;
     public String getMarca() {
         return marca;
     }
@@ -31,15 +34,6 @@ public class Produto {
     public void setMarca(String marca) {
         this.marca = marca;
     }
-
-    @Column(nullable = false)
-    private BigDecimal preco;
-
-    @Column(nullable = false)
-    private LocalDate dataFabricacao;
-
-    @Column(nullable = false)
-    private LocalDate dataVencimento;
 
     public int getId() {
         return id;

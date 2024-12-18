@@ -15,6 +15,7 @@ import javax.swing.BorderFactory;
 import javax.swing.JOptionPane;
 import javax.swing.border.Border;
 
+
 public class ProdutoJFormDialog extends javax.swing.JDialog {
 
      private final ProdutoDAO produtoDAO;
@@ -118,48 +119,47 @@ public class ProdutoJFormDialog extends javax.swing.JDialog {
         dadosLB = new javax.swing.JLabel();
         precoFTF = new javax.swing.JFormattedTextField();
         nomeLB = new javax.swing.JLabel();
-        salvarBT = new javax.swing.JButton();
         dataVencimentoLB = new javax.swing.JLabel();
         cancelarBT = new javax.swing.JButton();
         dadosObrigatoriosLB = new javax.swing.JLabel();
         precoLB = new javax.swing.JLabel();
         dataFabricacaoLB = new javax.swing.JLabel();
         marcaLB = new javax.swing.JLabel();
-        nomeTF = new javax.swing.JTextField();
         marcaTF = new javax.swing.JTextField();
         dataFabricacaoFTF = new javax.swing.JFormattedTextField();
-        dataVencimentoFTF1 = new javax.swing.JFormattedTextField();
-        dadosLB1 = new javax.swing.JLabel();
-        precoFTF1 = new javax.swing.JFormattedTextField();
-        nomeLB1 = new javax.swing.JLabel();
-        salvarBT1 = new javax.swing.JButton();
-        dataVencimentoLB1 = new javax.swing.JLabel();
-        cancelarBT1 = new javax.swing.JButton();
-        dadosObrigatoriosLB1 = new javax.swing.JLabel();
-        precoLB1 = new javax.swing.JLabel();
-        dataFabricacaoLB1 = new javax.swing.JLabel();
-        marcaLB1 = new javax.swing.JLabel();
-        nomeTF1 = new javax.swing.JTextField();
-        marcaTF1 = new javax.swing.JTextField();
-        dataFabricacaoFTF1 = new javax.swing.JFormattedTextField();
+        salvarBT = new javax.swing.JButton();
+        nomeTF = new javax.swing.JTextField();
 
-        dataVencimentoFTF.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(java.text.DateFormat.getDateInstance(java.text.DateFormat.SHORT))));
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+
+        try {
+            dataVencimentoFTF.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##/##/####")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
+        dataVencimentoFTF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                dataVencimentoFTFActionPerformed(evt);
+            }
+        });
 
         dadosLB.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         dadosLB.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         dadosLB.setText("Dados do Produto");
 
-        precoFTF.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0.00"))));
+        precoFTF.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter()));
 
         nomeLB.setText("*Nome:");
-
-        salvarBT.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/save.png"))); // NOI18N
-        salvarBT.setText("Salvar");
 
         dataVencimentoLB.setText("*Data de vencimento: ");
 
         cancelarBT.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/x-circle.png"))); // NOI18N
         cancelarBT.setText("Cancelar");
+        cancelarBT.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cancelarBTActionPerformed(evt);
+            }
+        });
 
         dadosObrigatoriosLB.setForeground(new java.awt.Color(255, 102, 102));
         dadosObrigatoriosLB.setText("*Dados obrigatorios");
@@ -170,180 +170,169 @@ public class ProdutoJFormDialog extends javax.swing.JDialog {
 
         marcaLB.setText("*Marca:");
 
-        dataFabricacaoFTF.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(java.text.DateFormat.getDateInstance(java.text.DateFormat.SHORT))));
-
-        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-
-        dataVencimentoFTF1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(java.text.DateFormat.getDateInstance(java.text.DateFormat.SHORT))));
-
-        dadosLB1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        dadosLB1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        dadosLB1.setText("Dados do Produto");
-
-        precoFTF1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0.00"))));
-
-        nomeLB1.setText("*Nome:");
-
-        salvarBT1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/save.png"))); // NOI18N
-        salvarBT1.setText("Salvar");
-        salvarBT1.addActionListener(new java.awt.event.ActionListener() {
+        marcaTF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                salvarBT1ActionPerformed(evt);
+                marcaTFActionPerformed(evt);
             }
         });
 
-        dataVencimentoLB1.setText("*Data de vencimento: ");
-
-        cancelarBT1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/x-circle.png"))); // NOI18N
-        cancelarBT1.setText("Cancelar");
-        cancelarBT1.addActionListener(new java.awt.event.ActionListener() {
+        try {
+            dataFabricacaoFTF.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##/##/####")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
+        dataFabricacaoFTF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cancelarBT1ActionPerformed(evt);
+                dataFabricacaoFTFActionPerformed(evt);
             }
         });
 
-        dadosObrigatoriosLB1.setForeground(new java.awt.Color(255, 102, 102));
-        dadosObrigatoriosLB1.setText("*Dados obrigatorios");
+        salvarBT.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/save.png"))); // NOI18N
+        salvarBT.setText("Salvar");
+        salvarBT.setToolTipText("");
+        salvarBT.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                salvarBTActionPerformed(evt);
+            }
+        });
 
-        precoLB1.setText("*Preco:");
-
-        dataFabricacaoLB1.setText("*Data de fabricação:");
-
-        marcaLB1.setText("*Marca:");
-
-        dataFabricacaoFTF1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(java.text.DateFormat.getDateInstance(java.text.DateFormat.SHORT))));
+        nomeTF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nomeTFActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(dadosLB1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(precoLB1, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(dadosObrigatoriosLB1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(dataFabricacaoLB1, javax.swing.GroupLayout.DEFAULT_SIZE, 125, Short.MAX_VALUE)
-                    .addComponent(dataVencimentoLB1)
-                    .addComponent(marcaLB1, javax.swing.GroupLayout.DEFAULT_SIZE, 125, Short.MAX_VALUE)
-                    .addComponent(nomeLB1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(dadosLB, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(47, 47, 47)
+                        .addContainerGap()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(precoLB, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(dadosObrigatoriosLB, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(dataFabricacaoLB, javax.swing.GroupLayout.DEFAULT_SIZE, 263, Short.MAX_VALUE)
+                            .addComponent(dataVencimentoLB)
+                            .addComponent(marcaLB, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(nomeLB, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(nomeTF1)
-                            .addComponent(marcaTF1)
-                            .addComponent(dataFabricacaoFTF1)
-                            .addComponent(dataVencimentoFTF1)
-                            .addComponent(precoFTF1)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(cancelarBT1, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(salvarBT1, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(41, 41, 41)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(marcaTF)
+                                    .addComponent(dataFabricacaoFTF)
+                                    .addComponent(dataVencimentoFTF)
+                                    .addComponent(precoFTF)
+                                    .addComponent(nomeTF)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 42, Short.MAX_VALUE)
+                                .addComponent(cancelarBT, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(salvarBT, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(dadosLB1, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(dadosLB, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(nomeLB1)
-                    .addComponent(nomeTF1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(nomeLB)
+                    .addComponent(nomeTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(12, 12, 12)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(marcaLB1)
-                    .addComponent(marcaTF1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(marcaLB)
+                    .addComponent(marcaTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(dataFabricacaoLB1)
-                    .addComponent(dataFabricacaoFTF1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(dataFabricacaoLB)
+                    .addComponent(dataFabricacaoFTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(dataVencimentoLB1)
-                    .addComponent(dataVencimentoFTF1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                    .addComponent(dataVencimentoLB)
+                    .addComponent(dataVencimentoFTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(21, 21, 21)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(precoLB1)
-                    .addComponent(precoFTF1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(precoLB)
+                    .addComponent(precoFTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 25, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(dadosObrigatoriosLB1, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(dadosObrigatoriosLB, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(salvarBT1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(cancelarBT1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(cancelarBT, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(salvarBT, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void salvarBT1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salvarBT1ActionPerformed
+    private void cancelarBTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cancelarBTActionPerformed
+        this.dispose();
+        limparCampos();
+    }//GEN-LAST:event_cancelarBTActionPerformed
+
+    private void dataFabricacaoFTFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dataFabricacaoFTFActionPerformed
+    }//GEN-LAST:event_dataFabricacaoFTFActionPerformed
+
+    private void dataVencimentoFTFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dataVencimentoFTFActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_dataVencimentoFTFActionPerformed
+
+    private void salvarBTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salvarBTActionPerformed
         if (!formularioValido()) {
             JOptionPane.showMessageDialog(
                     this,
                     "Formulario inválido, por favor verifique os campos em vermelho",
                     "ERRO DE VALIDAÇAO",
-                    JOptionPane.ERROR_MESSAGE
-            );
+                    JOptionPane.ERROR_MESSAGE);
 
             formularioObjeto();
 
-            if(produto.getId() == 0) {
+            if (produto.getId() == 0) {
                 produtoDAO.create(produto);
                 JOptionPane.showMessageDialog(
                         null,
                         "Produto cadastrado com sucesso!",
                         "SUCESSO",
-                        JOptionPane.INFORMATION_MESSAGE
-                );
+                        JOptionPane.INFORMATION_MESSAGE);
             } else {
                 produtoDAO.update(produto);
                 JOptionPane.showMessageDialog(
                         null,
                         "Produto atualizado com sucesso!",
                         "SUCESSO",
-                        JOptionPane.INFORMATION_MESSAGE
-                );
+                        JOptionPane.INFORMATION_MESSAGE);
             }
             this.dispose();
         }
-    }
+    }//GEN-LAST:event_salvarBTActionPerformed
 
-    private void cancelarBT1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cancelarBT1ActionPerformed
-        this.dispose();
-        limparCampos();
-    }//GEN-LAST:event_cancelarBT1ActionPerformed
+    private void marcaTFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_marcaTFActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_marcaTFActionPerformed
+
+    private void nomeTFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nomeTFActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_nomeTFActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton cancelarBT;
-    private javax.swing.JButton cancelarBT1;
     private javax.swing.JLabel dadosLB;
-    private javax.swing.JLabel dadosLB1;
     private javax.swing.JLabel dadosObrigatoriosLB;
-    private javax.swing.JLabel dadosObrigatoriosLB1;
     private javax.swing.JFormattedTextField dataFabricacaoFTF;
-    private javax.swing.JFormattedTextField dataFabricacaoFTF1;
     private javax.swing.JLabel dataFabricacaoLB;
-    private javax.swing.JLabel dataFabricacaoLB1;
     private javax.swing.JFormattedTextField dataVencimentoFTF;
-    private javax.swing.JFormattedTextField dataVencimentoFTF1;
     private javax.swing.JLabel dataVencimentoLB;
-    private javax.swing.JLabel dataVencimentoLB1;
     private javax.swing.JLabel marcaLB;
-    private javax.swing.JLabel marcaLB1;
     private javax.swing.JTextField marcaTF;
-    private javax.swing.JTextField marcaTF1;
     private javax.swing.JLabel nomeLB;
-    private javax.swing.JLabel nomeLB1;
     private javax.swing.JTextField nomeTF;
-    private javax.swing.JTextField nomeTF1;
     private javax.swing.JFormattedTextField precoFTF;
-    private javax.swing.JFormattedTextField precoFTF1;
     private javax.swing.JLabel precoLB;
-    private javax.swing.JLabel precoLB1;
     private javax.swing.JButton salvarBT;
-    private javax.swing.JButton salvarBT1;
     // End of variables declaration//GEN-END:variables
 }

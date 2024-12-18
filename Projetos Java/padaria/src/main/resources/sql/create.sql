@@ -6,6 +6,7 @@ CREATE TABLE tb_produto
 (
 	id INT AUTO_INCREMENT,
 	nome VARCHAR(50) NOT NULL,
+    marca VARCHAR(50) NOT NULL,
     preco DOUBLE NOT NULL,
     data_fabricacao DATE,
     data_vencimento DATE,
