@@ -1,14 +1,35 @@
 <!doctype html>
-<html lang="en" xmlns:th="https://thymeleaf.org">
+<html lang="pt-br" xmlns:th="https://thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" th:href="@{/css/home.css}" />
-    <title>Document</title>
+    <title>Agenda</title>
 </head>
 <body>
-    <h1> Agenda 👌👌👌</h1>
+<header>
+    <h1>Agenda de Bele - </h1>
+    <label id="mes">
+        <select>
+           <option value="1">Janeiro</option>
+            <option value="2">Fevereiro</option>
+            <option value="3">Março</option>
+            <option value="4">Abril</option>
+            <option value="5">Maio</option>
+            <option value="6">Junho</option>
+            <option value="7">Julho</option>
+            <option value="8">Agosto</option>
+            <option value="9">Setembro</option>
+            <option value="10">Outubro</option>
+            <option value="11">Novembro</option>
+            <option value="12">Dezembro</option>
+        </select>
+    </label>
+    <label id= "ano">
+        <input type="number" min="1" max="2100" value="2025" placeholder="Ano">
+    </label>
+</header>
 </body>
 </html>
