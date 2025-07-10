@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="agenda/src/main/java"/>
+	<classpathentry kind="src" path="agenda/src/test/java"/>
+	<classpathentry kind="src" path="padaria/src/main/java"/>
+	<classpathentry kind="lib" path="agenda/target/agenda-0.0.1-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="padaria/target/padaria-1.0-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="padaria/target/padaria-1.0-SNAPSHOT-jar-with-dependencies.jar"/>
+	<classpathentry kind="output" path="agenda/target/classes"/>
+</classpath>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="687987ea-a5c5-4495-97a0-a96633ff6cc4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/img/agt_update_critical.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/apply.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/back.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/cancel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/delete.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/delete.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/easymoblog.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/edit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/edit.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/edit_add.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/edit_remove.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/editdelete.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/eraser.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/exit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/file.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/file.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/fileopen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/filesave.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/find.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/folder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/info.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/irkick.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/irkickflash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/jabber_online.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/log-out.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/log-out.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/minus-circle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/minus-circle.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/ok.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/plus-circle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/plus-circle.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/run.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/save.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/save.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/save_all.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/search.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/shopping-bag.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/shopping-bag.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/sort_decrease.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/sort_incr.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/thumbnail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/user.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/wizard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/x-circle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/x-circle.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../busca-cep/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../busca-cep/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../busca-cep/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../busca-cep/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../busca-cep/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../busca-cep/src/main/java/org/img/agt_update_critical.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../busca-cep/src/main/java/org/img/apply.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../busca-cep/src/main/java/org/img/back.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../busca-cep/src/main/java/org/img/cancel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../busca-cep/src/main/java/org/img/delete.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../busca-cep/src/main/java/org/img/delete.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../busca-cep/src/main/java/org/img/easymoblog.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../busca-cep/src/main/java/org/img/edit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../busca-cep/src/main/java/org/img/edit.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../busca-cep/src/main/java/org/img/edit_add.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../busca-cep/src/main/java/org/img/edit_remove.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../busca-cep/src/main/java/org/img/editdelete.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../busca-cep/src/main/java/org/img/eraser.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../busca-cep/src/main/java/org/img/exit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../busca-cep/src/main/java/org/img/file.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../busca-cep/src/main/java/org/img/file.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../busca-cep/src/main/java/org/img/fileopen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../busca-cep/src/main/java/org/img/filesave.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../busca-cep/src/main/java/org/img/find.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../busca-cep/src/main/java/org/img/folder.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../busca-cep/src/main/java/org/img/info.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../busca-cep/src/main/java/org/img/irkick.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../busca-cep/src/main/java/org/img/irkickflash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../busca-cep/src/main/java/org/img/jabber_online.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../busca-cep/src/main/java/org/img/log-out.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../busca-cep/src/main/java/org/img/log-out.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../busca-cep/src/main/java/org/img/minus-circle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../busca-cep/src/main/java/org/img/minus-circle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../busca-cep/src/main/java/org/img/ok.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../busca-cep/src/main/java/org/img/plus-circle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../busca-cep/src/main/java/org/img/plus-circle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../busca-cep/src/main/java/org/img/run.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../busca-cep/src/main/java/org/img/save.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../busca-cep/src/main/java/org/img/save.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../busca-cep/src/main/java/org/img/save_all.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../busca-cep/src/main/java/org/img/search.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../busca-cep/src/main/java/org/img/search.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../busca-cep/src/main/java/org/img/shopping-bag.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../busca-cep/src/main/java/org/img/shopping-bag.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../busca-cep/src/main/java/org/img/sort_decrease.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../busca-cep/src/main/java/org/img/sort_incr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../busca-cep/src/main/java/org/img/thumbnail.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../busca-cep/src/main/java/org/img/user.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../busca-cep/src/main/java/org/img/user.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../busca-cep/src/main/java/org/img/wizard.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../busca-cep/src/main/java/org/img/x-circle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../busca-cep/src/main/java/org/img/x-circle.svg" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2sJr40U29BzYbu94VEw229XeU64" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/joao2/Projetos/Projetos Java/cardapio"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\joao2\Projetos\Projetos Java\buscar-cep\src" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="687987ea-a5c5-4495-97a0-a96633ff6cc4" name="Changes" comment="" />
+      <created>1738184326337</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1738184326337</updated>
+    </task>
+    <servers />
+  </component>
+</project>
