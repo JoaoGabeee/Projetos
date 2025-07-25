@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Pincipal</title>
+    <title>Exemplo</title>
 </head>
-<body>
-
-</body>
+    <body>
+        <p>Email destinatario: <span th:text="${email}"></span></p>
+        <p>Assunto: <span th:text="${assunto}"></span></p>
+        <p>Mensagem: <span th:text="${mensagem}"></span></p>
+    </body>
 </html>
