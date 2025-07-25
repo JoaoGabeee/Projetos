@@ -40,7 +40,6 @@ public class OrganizadorDocesApplication {
 
 		Runtime runTime = Runtime.getRuntime();
 		runTime.exec(new String[]{"powershell.exe", "-Command", "Start-process", url});
-
 	}
 
 }
