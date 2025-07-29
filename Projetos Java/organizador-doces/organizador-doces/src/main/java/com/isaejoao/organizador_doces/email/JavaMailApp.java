@@ -25,7 +25,7 @@ public class JavaMailApp {
         props.put("mail.smtp.auth", "true");
         props.put("mail.smtp.port", "465");
 
-        Dotenv dotenv = Dotenv.configure().directory("./").load();;
+        Dotenv dotenv = Dotenv.configure().directory("./").load();
 
         Session session = Session.getDefaultInstance(props,
                 new javax.mail.Authenticator() {
