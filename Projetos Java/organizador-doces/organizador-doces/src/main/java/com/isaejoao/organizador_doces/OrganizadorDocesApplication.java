@@ -31,7 +31,7 @@ public class OrganizadorDocesApplication {
 		JavaMailApp enviarEmail = new JavaMailApp();
 		enviarEmail.enviarEmail();
 
-		abrirNavegador();
+		//abrirNavegador();
 
 	}
 
@@ -40,6 +40,21 @@ public class OrganizadorDocesApplication {
 
 		Runtime runTime = Runtime.getRuntime();
 		runTime.exec(new String[]{"powershell.exe", "-Command", "Start-process", url});
+
+		/*
+		String url = "http://localhost:8080";
+		String os = System.getProperty("os.name").toLowerCase();
+
+		if (os.contains("win")) {
+			Runtime.getRuntime().exec("rundll32 url.dll,FileProtocolHandler " + url);
+		} else if (os.contains("mac")) {
+    		Runtime.getRuntime().exec("open " + url);
+		} else if (os.contains("nix") || os.contains("nux") || os.contains("aix")) {
+ 		   Runtime.getRuntime().exec("xdg-open " + url);
+		} else {
+    		System.out.println("Sistema operacional não suportado para abrir navegador automaticamente.");
+		}
+		*/
 	}
 
 }
