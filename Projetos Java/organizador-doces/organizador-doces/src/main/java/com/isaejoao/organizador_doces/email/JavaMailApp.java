@@ -16,6 +16,8 @@ import io.github.cdimascio.dotenv.Dotenv;
 
 public class JavaMailApp {
 
+    public static Dotenv dotenv = Dotenv.configure().directory("./").load();
+
     public void enviarEmail() {
 
         Properties props = new Properties();
@@ -24,8 +26,7 @@ public class JavaMailApp {
         props.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
         props.put("mail.smtp.auth", "true");
         props.put("mail.smtp.port", "465");
-
-        Dotenv dotenv = Dotenv.configure().directory("./").load();
+        
 
         Session session = Session.getDefaultInstance(props,
                 new javax.mail.Authenticator() {
