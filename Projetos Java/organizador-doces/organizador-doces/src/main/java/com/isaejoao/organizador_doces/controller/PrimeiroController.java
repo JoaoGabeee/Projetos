@@ -16,7 +16,7 @@ public class PrimeiroController {
         JavaMailApp javaMailApp = new JavaMailApp();
 
         model.addAttribute("remetente", javaMailApp.dotenv.get("EMAIL"));
-        model.addAttribute("destinatario", OrganizadorDocesApplication.email.getDestinatario());
+        model.addAttribute("email", OrganizadorDocesApplication.email.getDestinatario());
         model.addAttribute("assunto", OrganizadorDocesApplication.email.getAssunto());
         model.addAttribute("mensagem", OrganizadorDocesApplication.email.getMensagem());
         return "index";
