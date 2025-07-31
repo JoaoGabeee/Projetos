@@ -1,6 +1,7 @@
 package com.isaejoao.organizador_doces.email;
 
 import com.isaejoao.organizador_doces.OrganizadorDocesApplication;
+import com.isaejoao.organizador_doces.controller.PrimeiroController;
 
 import javax.mail.Address;
 import javax.mail.Message;
@@ -42,11 +43,11 @@ public class JavaMailApp {
                 Message message = new MimeMessage(session);
                 message.setFrom(new InternetAddress(dotenv.get("EMAIL")));
 
-                Address[] toUser = InternetAddress.parse(OrganizadorDocesApplication.email.getDestinatario());
+                Address[] toUser = InternetAddress.parse(PrimeiroController.email.getDestinatario());
 
                 message.setRecipients(Message.RecipientType.TO, toUser);
-                message.setSubject(OrganizadorDocesApplication.email.getAssunto());
-                message.setText(OrganizadorDocesApplication.email.getMensagem());
+                message.setSubject(PrimeiroController.email.getAssunto());
+                message.setText(PrimeiroController.email.getMensagem());
                 Transport.send(message);
 
             } catch (MessagingException e) {
