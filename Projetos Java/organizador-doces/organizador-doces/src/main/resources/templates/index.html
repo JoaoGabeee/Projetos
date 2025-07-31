@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" th:href="@{/css/style.css}">
-    <title>Exemplo</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" th:href="@{/css/style.css}">
+        <title>Exemplo</title>
+    </head>
+
     <body>
         <p>Email Remetente: <span th:text="${remetente}"></span></p>
-
-        <div>
-            <p>Assunto: <span th:text="${assunto}"></span></p>
-            <p>Mensagem: <span th:text="${mensagem}"></span></p>
-            <p>Email destinatario: <span th:text="${email}"></span></p>
+        
+        <p>Assunto: <span th:text="${assunto}"></span></p>
+        <p>Mensagem: <span th:text="${mensagem}"></span></p>
+        <p>Email destinatario: <span th:text="${email}"></span></p>
  
-
+        <form action="/enviar" method="post">
             <label>Assunto: <input type="text" id="assunto" name="assunto" th:value="${assunto}"></label>
             <label>Mensagem: <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea></label>
-            <label>Destinatario: <input type="email" name="email" id="email" placeholder="email@email.com" th:value="${email}"></label>
+            <label>Destinatario: <input type="email" name="destinatario" id="destinatario" placeholder="email@email.com" th:value="${email}"></label>
 
-            <p>a</p>
-        </div>
+            <button type="submit" value="enviar" class="enviar">Enviar</button>
+        </form>
         
     </body>
 </html>

@@ -17,7 +17,7 @@ public class OrganizadorDocesApplication {
 		SpringApplication.run(OrganizadorDocesApplication.class, args);
 
 
-		Scanner scanner = new Scanner(System.in);
+		/*Scanner scanner = new Scanner(System.in);
 
 		System.out.println("Digite o email do destinatario: ");
 		email.setDestinatario(scanner.nextLine());
@@ -29,7 +29,7 @@ public class OrganizadorDocesApplication {
 		email.setMensagem(scanner.nextLine());
 
 		JavaMailApp enviarEmail = new JavaMailApp();
-		enviarEmail.enviarEmail();
+		enviarEmail.enviarEmail();*/
 
 		//abrirNavegador();
 
