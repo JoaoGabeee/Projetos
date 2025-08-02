@@ -1,0 +1,113 @@
+:root {
+    --bg-color: #f8f9fa;
+    --text-color: #222;
+    --card-bg: #ffffff;
+    --label-color: #444;
+    --input-bg: #ffffff;
+    --input-border: #ccc;
+    --focus-color: #8e44ad;
+    --button-bg: #8e44ad;
+    --button-hover: #732d91;
+}
+
+body.dark {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --card-bg: #1e1e1e;
+    --label-color: #bbb;
+    --input-bg: #2b2b2b;
+    --input-border: #444;
+    --focus-color: #8e44ad;
+    --button-bg: #8e44ad;
+    --button-hover: #732d91;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    transition: background 0.3s, color 0.3s;
+}
+
+p {
+    background-color: var(--card-bg);
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+form {
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    transition: background 0.3s;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.95rem;
+    color: var(--label-color);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    border: 1px solid var(--input-border);
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s, background 0.3s, color 0.3s;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--focus-color);
+    box-shadow: 0 0 5px var(--focus-color);
+}   
+
+button.enviar {
+    background-color: var(--button-bg);
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button.enviar:hover {
+    background-color: var(--button-hover);
+    transform: scale(1.05);
+}
+
+button.trocar-tema {
+    background-color: #888;
+    color: #fff;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button.trocar-tema:hover {
+    background-color: #666;
+    transform: scale(1.05);
+}
+

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <title>Document</title>
+</head>
+<body class="dark">
+
+<button id="toggleTheme">Trocar tema</button>
+
+<p>Email Remetente: <span th:text="${remetente}"></span></p>
+
+<form action="/index" method="post">
+    <label>Assunto: <input type="text" id="assunto" name="assunto"></label>
+    <label>Mensagem: <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea></label>
+    <label>Destinatario: <input type="email" name="destinatario" id="destinatario"
+                                placeholder="email@email.com"></label>
+
+    <button type="submit" value="enviar" class="enviar">Enviar</button>
+</form>
+
+<script>
+    document.getElementById("toggleTheme").addEventListener("click", () => {
+        document.body.classList.toggle("dark");
+        document.body.classList.toggle("light");
+    });
+</script>
+
+</body>
+</html>
