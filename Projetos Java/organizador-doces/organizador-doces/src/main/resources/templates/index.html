@@ -14,6 +14,8 @@
         <p>Mensagem: <span th:text="${mensagem}"></span></p>
         <p>Email destinatario: <span th:text="${email}"></span></p>
  -->
+        <p>Email Remetente: <span th:text="${remetente}"></span></p>
+
         <form action="/enviar" method="post">
             <label>Assunto: <input type="text" id="assunto" name="assunto" th:value="${assunto}"></label>
             <label>Mensagem: <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea></label>

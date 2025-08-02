@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class PrimeiroController {
 
     public static Email email = new Email();
-    private JavaMailApp javaMailApp = new JavaMailApp();
+    private final JavaMailApp javaMailApp = new JavaMailApp();
 
    /*Enviar dados para pagina */
    
