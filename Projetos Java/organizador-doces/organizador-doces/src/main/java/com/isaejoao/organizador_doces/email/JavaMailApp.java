@@ -11,7 +11,6 @@ import javax.mail.Session;
 import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
-import java.util.Objects;
 import java.util.Properties;
 
 import io.github.cdimascio.dotenv.Dotenv;
@@ -42,7 +41,7 @@ public class JavaMailApp {
             try {
 
                 Message message = new MimeMessage(session);
-                message.setFrom(new InternetAddress(Objects.requireNonNull(dotenv.get("EMAIL"))));
+                message.setFrom(new InternetAddress(dotenv.get("EMAIL")));
 
                 Address[] toUser = InternetAddress.parse(PrimeiroController.email.getDestinatario());
 
