@@ -23,7 +23,7 @@ public class PrimeiroController {
    @GetMapping({"/", "/index", "/index.html"})
     public String index(Model model) {
 
-        model.addAttribute("remetente", javaMailApp.dotenv.get("EMAIL"));
+        model.addAttribute("remetente", JavaMailApp.dotenv.get("EMAIL"));
         model.addAttribute("email", OrganizadorDocesApplication.email.getDestinatario());
         model.addAttribute("assunto", OrganizadorDocesApplication.email.getAssunto());
         model.addAttribute("mensagem", OrganizadorDocesApplication.email.getMensagem());
