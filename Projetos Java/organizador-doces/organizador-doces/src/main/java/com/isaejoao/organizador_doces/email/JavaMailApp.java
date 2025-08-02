@@ -17,7 +17,7 @@ import io.github.cdimascio.dotenv.Dotenv;
 
 public class JavaMailApp {
 
-    public static Dotenv dotenv = Dotenv.configure().directory("./").load();
+    public static Dotenv dotenv = Dotenv.configure().directory("./organizador-doces").load();
 
     public void enviarEmail() {
 
