@@ -72,11 +72,12 @@ textarea {
 }
 
 input:focus,
-textarea:focus {
+textarea:focus,
+p:hover {
     outline: none;
     border-color: var(--focus-color);
     box-shadow: 0 0 5px var(--focus-color);
-}   
+}
 
 button.enviar {
     background-color: var(--button-bg);
@@ -94,20 +95,27 @@ button.enviar:hover {
     transform: scale(1.05);
 }
 
-button.trocar-tema {
-    background-color: #888;
-    color: #fff;
+.remetente-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.theme-button {
+    background: none;
     border: none;
-    padding: 8px 14px;
-    border-radius: 6px;
-    font-size: 0.9rem;
     cursor: pointer;
-    margin-bottom: 15px;
-    transition: background-color 0.3s, transform 0.2s;
+    padding: 0;
 }
 
-button.trocar-tema:hover {
-    background-color: #666;
-    transform: scale(1.05);
+.theme-icon {
+    width: 24px;
+    height: 24px;
 }
 
+.trocar-tema img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}

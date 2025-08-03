@@ -13,11 +13,13 @@ public class EmailController {
     @Autowired
     private EmailService emailService;
 
-    /*@GetMapping({"/", "/index", "/index.html"})
+    @GetMapping({"/", "/index", "/index.html"})
     public String index(Model model) {
 
+        model.addAttribute("remetente", emailService.dotenv.get("EMAIL"));
+
         return "index";
-    }*/
+    }
 
     @PostMapping("/index")
     public String processarFormulario(Model model,
