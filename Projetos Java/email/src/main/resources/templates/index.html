@@ -5,7 +5,7 @@
     <link rel="stylesheet" th:href="@{/css/style.css}">
     <title>E-mail</title>
 </head>
-<body class="dark">
+<body>
 
 <div class="remetente-container">
     <button id="toggleTheme" class="theme-button">
@@ -14,7 +14,7 @@
     <p>Email Remetente: <span th:text="${remetente}"></span></p>
 </div>
 
-<form action="/index" method="post">
+<form id="formEmail" action="/index" method="post">
     <label>Assunto: <input type="text" id="assunto" name="assunto"></label>
     <label>Mensagem: <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea></label>
     <label>Destinatario: <input type="email" name="destinatario" id="destinatario" placeholder="email@email.com"></label>
@@ -23,6 +23,8 @@
 </form>
 
 <script th:src="@{/js/tema.js}"></script>
+
+<div th:if="${mensagemSucesso}" id="msgSucesso" th:text="${mensagemSucesso}"></div>
 
 </body>
 </html>

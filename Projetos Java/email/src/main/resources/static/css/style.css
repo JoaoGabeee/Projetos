@@ -8,6 +8,9 @@
     --focus-color: #8e44ad;
     --button-bg: #8e44ad;
     --button-hover: #732d91;
+    --success-bg: #d4edda;
+    --success-border: #c3e6cb;
+    --success-text: #155724;
 }
 
 body.dark {
@@ -17,9 +20,9 @@ body.dark {
     --label-color: #bbb;
     --input-bg: #2b2b2b;
     --input-border: #444;
-    --focus-color: #8e44ad;
-    --button-bg: #8e44ad;
-    --button-hover: #732d91;
+    --success-bg: #1b3b2b;
+    --success-border: #2d5a3f;
+    --success-text: #a8e6a3;
 }
 
 body {
@@ -114,8 +117,30 @@ button.enviar:hover {
     height: 24px;
 }
 
-.trocar-tema img {
-    width: 24px;
-    height: 24px;
-    vertical-align: middle;
+#msgSucesso {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: var(--success-bg);
+    border: 1px solid var(--success-border);
+    color: var(--success-text);
+    border-radius: 6px;
+    font-size: 14px;
+    animation: fadeIn 0.5s ease-in-out;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out, background-color 0.3s, color 0.3s;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

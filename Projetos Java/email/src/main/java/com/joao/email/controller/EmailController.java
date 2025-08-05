@@ -35,6 +35,8 @@ public class EmailController {
 
         emailService.enviarEmail();
 
+        model.addAttribute("mensagemSucesso", "✅ E-mail enviado com sucesso!");
+
         return "index";
     }
 
