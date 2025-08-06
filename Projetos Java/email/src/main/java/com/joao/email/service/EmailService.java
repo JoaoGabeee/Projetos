@@ -19,7 +19,12 @@ public class EmailService {
 
     public Email email = new Email();
     public  Dotenv dotenv = Dotenv.configure().directory("./").load();
-    public void enviarEmail() {
+
+    public void enviarEmail(String assuntoEmail, String mensagemEmail, String destinatarioEmail) {
+
+        email.setAssunto(assuntoEmail);
+        email.setMensagem(mensagemEmail);
+        email.setDestinatario(destinatarioEmail);
 
         Properties props = new Properties();
         props.put("mail.smtp.host", "smtp.gmail.com");

@@ -8,9 +8,14 @@
     --focus-color: #8e44ad;
     --button-bg: #8e44ad;
     --button-hover: #732d91;
+
     --success-bg: #d4edda;
     --success-border: #c3e6cb;
     --success-text: #155724;
+
+    --error-bg: #f8d7da;
+    --error-border: #f5c6cb;
+    --error-text: #721c24;
 }
 
 body.dark {
@@ -19,10 +24,15 @@ body.dark {
     --card-bg: #1e1e1e;
     --label-color: #bbb;
     --input-bg: #2b2b2b;
+
     --input-border: #444;
     --success-bg: #1b3b2b;
     --success-border: #2d5a3f;
     --success-text: #a8e6a3;
+
+    --error-bg: #3b1b1b;
+    --error-border: #5a2d2d;
+    --error-text: #f5b5b5;
 }
 
 body {
@@ -130,8 +140,17 @@ button.enviar:hover {
     transition: opacity 0.5s ease-in-out, background-color 0.3s, color 0.3s;
 }
 
-.fade-out {
-    opacity: 0;
+#msgErro {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: var(--error-bg);
+    border: 1px solid var(--error-border);
+    color: var(--error-text);
+    border-radius: 6px;
+    font-size: 14px;
+    animation: fadeIn 0.5s ease-in-out;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out, background-color 0.3s, color 0.3s;
 }
 
 @keyframes fadeIn {

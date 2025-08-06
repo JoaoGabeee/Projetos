@@ -1,4 +1,4 @@
- const toggleButton = document.getElementById("toggleTheme");
+const toggleButton = document.getElementById("toggleTheme");
 const themeIcon = document.getElementById("themeIcon");
 const body = document.body;
 
@@ -31,14 +31,20 @@ toggleButton.addEventListener("click", () => {
     }
 });
 
-window.addEventListener("DOMContentLoaded", function () {
-    const msg = document.getElementById("msgSucesso");
-    if (msg) {
-        setTimeout(() => {
-            msg.classList.add("fade-out");
+document.addEventListener("DOMContentLoaded", function () {
+    const msgSucesso = document.getElementById("msgSucesso");
+    const msgErro = document.getElementById("msgErro");
+
+    function esconderMensagem(msg) {
+        if (msg) {
             setTimeout(() => {
-                msg.style.display = "none";
-            }, 500); // tempo do fade-out
-        }, 3000); // espera 3 segundos antes de sumir
+                msg.style.transition = "opacity 0.5s";
+                msg.style.opacity = "0";
+                setTimeout(() => msg.remove(), 500); 
+            }, 5000);
+        }
     }
+
+    esconderMensagem(msgSucesso);
+    esconderMensagem(msgErro);
 });

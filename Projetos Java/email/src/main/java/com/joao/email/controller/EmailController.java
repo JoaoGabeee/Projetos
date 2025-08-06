@@ -29,13 +29,13 @@ public class EmailController {
 
         model.addAttribute("remetente", emailService.dotenv.get("EMAIL"));
 
-        emailService.email.setAssunto(assunto);
-        emailService.email.setMensagem(mensagem);
-        emailService.email.setDestinatario(destinatario);
+        try {
+            emailService.enviarEmail(assunto, mensagem, destinatario);
 
-        emailService.enviarEmail();
-
-        model.addAttribute("mensagemSucesso", "✅ E-mail enviado com sucesso!");
+            model.addAttribute("mensagemSucesso", "✅ E-mail enviado com sucesso para: " + destinatario);
+        } catch(Exception e) {
+            model.addAttribute("mensagemErro", "❌ Não conseguimos enviar seu e-mail --- Erro: " + e);
+        }
 
         return "index";
     }
