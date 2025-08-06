@@ -4,3 +4,8 @@ O intuito desse repositorio é guardar alguns projetos individuais, a fim de con
 
 ## Tecnologias
 - **Java**
+- **Spring**
+- **Html**
+- **Css**
+- **JavaScript**
+  
