@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veivanco & Santos - Escritório de Contabilidade</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      scroll-behavior: smooth;
+    }
+    .navbar {
+      background: #0e233d;
+    }
+    .navbar-brand, .nav-link {
+      color: #fff !important;
+    }
+    .navbar-brand img {
+      height: 40px;
+      margin-right: 10px;
+    }
+    header {
+      background: linear-gradient(rgba(14,35,61,0.7), rgba(14,35,61,0.7)), url('contabilidade.jpg') center/cover no-repeat;
+      color: #fff;
+      text-align: center;
+      padding: 120px 20px;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      font-weight: 600;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin: 20px 0;
+    }
+    .btn-cta {
+      background: #13e288;
+      color: #0e233d;
+      font-weight: 600;
+      border-radius: 30px;
+      padding: 12px 30px;
+    }
+    .btn-cta:hover {
+      background: #11d480;
+      color: #0e233d;
+    }
+    section h2 {
+      color: #0e233d;
+      font-weight: 600;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    .card {
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+    }
+    footer {
+      background: #0e233d;
+      color: #fff;
+      padding: 40px 20px;
+    }
+    .footer-links a {
+      color: #fff;
+      text-decoration: none;
+    }
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #11d480;
+      color: #fff;
+      padding: 15px;
+      border-radius: 50%;
+      font-size: 1.5rem;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="logo.png" alt="Logo"> Veivanco & Santos - Contabilidade
+    </a>
+    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+        <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+        <li class="nav-item"><a class="nav-link" href="#depoimentos">Depoimentos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header>
+  <div class="container">
+    <h1>Sua Contabilidade de Confiança</h1>
+    <p>Soluções contábeis modernas para o crescimento sustentável do seu negócio</p>
+    <a href="#contato" class="btn btn-cta">Fale Conosco</a>
+  </div>
+</header>
+
+<!-- SOBRE -->
+<section id="sobre" class="py-5">
+  <div class="container text-center">
+    <h2>Sobre Nós</h2>
+    <p>Na <strong>Veivanco & Santos - Contabilidade</strong>, oferecemos soluções completas de contabilidade, com mais de 10 anos de experiência ajudando empresas de todos os portes. Nosso objetivo é simplificar processos e dar suporte estratégico para o sucesso dos nossos clientes.</p>
+  </div>
+</section>
+
+<!-- SERVIÇOS -->
+<section id="servicos" class="py-5 bg-light">
+  <div class="container">
+    <h2>Nossos Serviços</h2>
+    <div class="row g-4">
+      <div class="col-md-3">
+        <div class="card text-center p-3">
+          <img src="icone1.png" class="mx-auto mb-3" alt="Abertura" style="height:50px;">
+          <h5>Abertura de Empresas</h5>
+          <p>Formalização rápida e segura do seu negócio.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card text-center p-3">
+          <img src="icone2.png" class="mx-auto mb-3" alt="Fiscal" style="height:50px;">
+          <h5>Gestão Fiscal</h5>
+          <p>Organização tributária e conformidade legal.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card text-center p-3">
+          <img src="icone3.png" class="mx-auto mb-3" alt="Folha" style="height:50px;">
+          <h5>Folha de Pagamento</h5>
+          <p>Administração completa da equipe e encargos.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card text-center p-3">
+          <img src="icone4.png" class="mx-auto mb-3" alt="Consultoria" style="height:50px;">
+          <h5>Consultoria Financeira</h5>
+          <p>Planejamento para otimizar resultados financeiros.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section id="depoimentos" class="py-5">
+  <div class="container">
+    <h2>O que dizem nossos clientes</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card p-3">
+          <p>"A Veivanco & Santos - Contabilidade foi essencial para o crescimento da nossa empresa. Atendimento impecável!"</p>
+          <h6 class="mt-3">— João Silva, CEO da TechX</h6>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-3">
+          <p>"Equipe competente e sempre pronta para resolver nossas dúvidas contábeis."</p>
+          <h6 class="mt-3">— Maria Oliveira, Diretora da AgroMais</h6>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-3">
+          <p>"Profissionalismo e segurança em cada detalhe. Recomendo sem dúvidas."</p>
+          <h6 class="mt-3">— Ricardo Pereira, Sócio da Construtiva</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato" class="py-5 bg-light">
+  <div class="container">
+    <h2>Fale Conosco</h2>
+    <form class="row g-3">
+      <div class="col-md-6">
+        <input type="text" class="form-control" placeholder="Seu nome" required>
+      </div>
+      <div class="col-md-6">
+        <input type="email" class="form-control" placeholder="Seu e-mail" required>
+      </div>
+      <div class="col-12">
+        <textarea class="form-control" rows="5" placeholder="Sua mensagem" required></textarea>
+      </div>
+      <div class="col-12 text-center">
+        <button type="submit" class="btn btn-cta">Enviar Mensagem</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <h5>Veivanco & Santos - Contabilidade</h5>
+        <p>Soluções contábeis completas para o crescimento da sua empresa.</p>
+      </div>
+      <div class="col-md-4 mb-3 footer-links">
+        <h5>Links Rápidos</h5>
+        <a href="#sobre">Sobre</a><br>
+        <a href="#servicos">Serviços</a><br>
+        <a href="#contato">Contato</a>
+      </div>
+      <div class="col-md-4 mb-3">
+        <h5>Contato</h5>
+        <p>Rua João Maltaca, 160 - Itaperuçu/PR</p>
+        <p>📞 (41) 99690-3703</p>
+        <p>✉️ contato@contvs.com.br</p>
+      </div>
+    </div>
+    <hr style="border-color: rgba(255,255,255,0.2);">
+    <p class="text-center">&copy; 2025 github.com/JoaoGabeee | Todos os direitos reservados</p>
+  </div>
+</footer>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/5541996903703" class="whatsapp" target="_blank">💬</a>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
