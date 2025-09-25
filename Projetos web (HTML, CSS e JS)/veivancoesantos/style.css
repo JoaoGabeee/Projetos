@@ -1,75 +1,105 @@
+:root {
+  --cor-primaria: #0e233d;
+  --cor-secundaria: #13e288;
+  --cor-secundaria-hover: #11c074;
+  --cor-texto: #fff;
+  --cor-gradiente-1: #0e233d;
+  --cor-gradiente-2: #13e288;
+  --cor-gradiente-3: #fff;
+}
+
 body {
-      font-family: "Poppins", sans-serif;
-      scroll-behavior: smooth;
-    }
-    .navbar {
-      background: #0e233d;
-    }
-    .navbar-brand, .nav-link {
-      color: #fff !important;
-    }
-    .navbar-brand img {
-      height: 40px;
-      margin-right: 10px;
-    }
-    header {
-      background: linear-gradient(rgb(14, 35, 61), rgb(19, 226, 136), rgb(255, 255, 255)), url('contabilidade.jpg') center/cover no-repeat;
-      color: #fff;
-      text-align: center;
-      padding: 120px 20px;
-    }
-    header h1 {
-      font-size: 2.8rem;
-      font-weight: 600;
-    }
-    header p {
-      font-size: 1.2rem;
-      margin: 20px 0;
-    }
-    .btn-cta {
-      background: #13e288;
-      color: #0e233d;
-      font-weight: 600;
-      border-radius: 30px;
-      padding: 12px 30px;
-    }
-    .btn-cta:hover {
-      background: #11d480;
-      color: #0e233d;
-    }
-    section h2 {
-      color: #0e233d;
-      font-weight: 600;
-      margin-bottom: 40px;
-      text-align: center;
-    }
-    .card {
-      transition: transform 0.3s;
-    }
-    .card:hover {
-      transform: translateY(-8px);
-    }
-    footer {
-      background: #0e233d;
-      color: #fff;
-      padding: 40px 20px;
-    }
-    .footer-links a {
-      color: #fff;
-      text-decoration: none;
-    }
-    .footer-links a:hover {
-      text-decoration: underline;
-    }
-    .whatsapp {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #11d480;
-      color: #fff;
-      padding: 15px;
-      border-radius: 50%;
-      font-size: 1.5rem;
-      text-decoration: none;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  background: var(--cor-primaria);
+}
+
+.navbar-brand, .nav-link {
+  color: var(--cor-texto) !important;
+}
+
+.navbar-brand img {
+  height: 2rem;
+  margin-right: 0.5rem;
+}
+
+header {
+  background: linear-gradient(
+      var(--cor-gradiente-1), 
+      var(--cor-gradiente-2), 
+      var(--cor-gradiente-3)
+    ), 
+    url('contabilidade.jpg') center/cover no-repeat;
+  color: var(--cor-texto);
+  text-align: center;
+  padding: 120px 20px;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+.btn-cta {
+  background: var(--cor-secundaria);
+  color: var(--cor-primaria);
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 12px 30px;
+}
+
+.btn-cta:hover {
+  background: var(--cor-secundaria-hover);
+  color: var(--cor-primaria);
+}
+
+section h2 {
+  color: var(--cor-primaria);
+  font-weight: 600;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.card {
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+footer {
+  background: var(--cor-primaria);
+  color: var(--cor-texto);
+  padding: 40px 20px;
+}
+
+.footer-links a {
+  color: var(--cor-texto);
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--cor-secundaria-hover);
+  color: var(--cor-texto);
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
