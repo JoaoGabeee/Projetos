@@ -16,17 +16,18 @@ body {
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
+
 .navbar {
   background: var(--cor-primaria);
 }
 
-.navbar a{
+.navbar a {
   color: var(--cor-texto) !important;
 }
 
 .navbar-brand img {
-  height: 2rem; 
-  margin-right: 0.5rem; 
+  height: 2rem;
+  margin-right: 0.5rem;
 }
 
 .navbar .nav-link {
@@ -58,22 +59,17 @@ body {
   0% {
     background-position: 200% 0;
   }
+
   100% {
     background-position: -200% 0;
   }
 }
 
-
 header {
-  background: linear-gradient(
-      var(--cor-gradiente-1), 
-      var(--cor-gradiente-2), 
-      var(--cor-gradiente-3)
-    ), 
-    url('contabilidade.jpg') center/cover no-repeat;
+  background: linear-gradient(var(--cor-gradiente-1), var(--cor-gradiente-2), var(--cor-gradiente-3)), url('contabilidade.jpg') center/cover no-repeat;
   color: var(--cor-texto);
   text-align: center;
-  padding: 120px 20px;
+  padding: 6rem;
 }
 
 header h1 {
@@ -90,8 +86,8 @@ header p {
   background: var(--cor-secundaria);
   color: var(--cor-primaria);
   font-weight: 600;
-  border-radius: 30px;
-  padding: 12px 30px;
+  border-radius: 2rem;
+  padding: 0.7rem 2rem;
 }
 
 .btn-cta:hover {
@@ -111,7 +107,7 @@ section h2 {
 }
 
 .card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-0.5rem);
 }
 
 footer {
@@ -143,5 +139,5 @@ footer {
   border-radius: 50%;
   font-size: 1.5rem;
   text-decoration: none;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.8);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
 }
